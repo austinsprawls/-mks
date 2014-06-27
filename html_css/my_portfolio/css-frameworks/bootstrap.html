@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Eterna | Think of anything right now</title>
+      <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/foundation/5.0.2/css/foundation.min.css" />
+    <!-- put in font awesome -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <style type="text/css">
+    * {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      }
+      .standout { color: #f16753; }
+      .grey-text { color: #818181; }
+      .nav-button {
+          margin-right: 10px;
+          cursor: pointer;
+          font-size: 11px;
+          color: #a0a0a0;
+      }
+      .nav-button active {
+          padding: 5px;
+          border-radius: 5px;
+          color: white;
+          background: #f16753;
+      }
+      .hero-wrapper {
+          background: url('https://raw.github.com/makersquare/first-full-layout/master/eterna/background.jpg') no-repeat;
+          padding-top: 83px;
+          min-height: 338px;
+          overflow: hidden;
+      }
+      .hero-wrapper h3 {font-weight: 900;}
+      .headerwrap {
+          margin: 25px 0;
+      }
+      .right-feature-sides {
+          margin-left: 78px;
+          width: 190px;
+      }
+      .right-feature-sides h4 {
+          margin-top: 0px;
+          font-size: 24px;
+          font-weight: 200;
+      }
+      .features-and-footer {
+          margin-top: 44px;
+      }
+      .feature-dot {
+          width: 60px;
+          height: 60px;
+          vertical-align: middle;
+          padding-top: 4px;
+          font-size: 35px;
+          float: left;
+          background: #f16753;
+          border-radius: 50%;
+          color: white;
+          text-align: center;
+      }
+      .learn-more-link {
+          font-weight: bold;
+          cursor: pointer;
+          margin-top: 10px;
+          display: block;
+      }
+      footer {
+          border-top: 1px solid #ddd;
+          margin-top: 80px;
+          padding-top: 5px;
+      }
+      .subscribe {
+          background: #dc5e4c;
+          border: 0;
+          color: white;
+          height: 33px;
+          border-radius: 0 3px 3px 0;
+          padding: 0 20px;
+          margin-left: -5px;
+      }
+      .subscribe-email {
+          width: 200px;
+          height: 35px;
+          border: 0;
+      }
+    /* You will put the rest of the styles here */
+    </style>
+  </head>
+<body>
+    <div class="container">
+        <div class="headerwrap row">
+            <div class="large-1 columns"></div>
+            <div class="large-2 columns">
+                <img src="https://raw.github.com/makersquare/first-full-layout/master/eterna/logo.png" width="130px" />
+            </div>
+            <div class="large-4 columns">&nbsp;</div>
+            <div class="large-5 columns">
+                <span class="nav-button active"><i class="fa fa-home"></i>&nbsp;Home&nbsp;<i class="fa fa-angle-down"></i></span>
+                <span class="nav-button">Features&nbsp;<i class="fa fa-angle-down"></i></span>
+                <span class="nav-button">Pages&nbsp;<i class="fa fa-angle-down"></i></span>
+                <span class="nav-button">Portfolio&nbsp;<i class="fa fa-angle-down"></i></span>
+                <span class="nav-button">Blog&nbsp;<i class="fa fa-angle-down"></i></span>
+                <span class="nav-button">Contact&nbsp;</span>
+            </div>
+        </div>
+      </div>
+
+    <div class="hero-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="large-1 columns"></div>
+                <div class="large-5 columns">
+                    <img src="https://raw.github.com/makersquare/first-full-layout/master/eterna/iMac.png" width="450px" />
+                </div>
+                <div class="large-5 columns">
+                    <h3>Put your <span class="standout">Opt in form</span></h3>
+                    <p><small>Vim porro dicam reprehendunt te, populo quodsi dissentient cum ad. Ne natum deseruisse vis. lisque deseruisse sententiae mel ne, dolores appetere vim ut. Sea no taquam reprimique</small></p>
+                    <div>
+                        <input type="text" class="subscribe-email" />
+                        <input type="button" value="Subscribe" class="subscribe" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="features-and-footer container">
+        <div class="row">
+            <div class="large-4 columns">
+                <div class="feature-dot"><i class="fa fa-star"></i></div>
+                <div class="right-feature-sides">
+                    <div><h4>High<strong>Quality</strong></h4></div>
+                    <div><small class="grey-text">Lorem ipsum dolor sit amet, has ei ipsum scaevola deseruisse am sea facilisis.</small></div>
+                    <div><small class="learn-more-link">Learn More</small></div>
+                </div>
+            </div>
+            <div class="large-4 columns">
+                <div class="feature-dot"><i class="fa fa-dropbox"></i></div>
+                <div class="right-feature-sides">
+                    <div><h4>Rich of <strong>Features</strong></h4></div>
+                    <div><small class="grey-text">Lorem ipsum dolor sit amet, has ei ipsum scaevola deseruisse am sea facilisis.</small></div>
+                    <div><small class="learn-more-link">Learn More</small></div>
+                </div>
+            </div>
+            <div class="large-4 columns">
+                <div class="feature-dot"><i class="fa fa-laptop"></i></div>
+                <div class="right-feature-sides">
+                    <div><h4>Modern <strong>Design</strong></h4></div>
+                    <div><small class="grey-text">Lorem ipsum dolor sit amet, has ei ipsum scaevola deseruisse am sea facilisis.</small></div>
+                    <div><small class="learn-more-link">Learn More</small></div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="row">
+            <div class="large-3 columns"></div>
+            <div class="large-6 columns">
+                <h3 class="text-center">Our <strong>Pricing</strong></h3>
+                <p class="text-center"><small class="grey-text">Lorem ipsum dolor sit amet, has ei ipsum scaevola deseruisse am sea facilisis.</small></p>
+            </div>
+            <div class="large-3 columns"></div>
+        </footer>
+
+    </div>
+
+  </div>
+</body>
+</html>
