@@ -1,24 +1,34 @@
 class Cookbook
-    def initialize(title)
-        @title = title
-        @recipes = []
-    end
 
-    def add_recipe(recipe)
-        @recipes << recipe
-        puts "Added a recipe to the collection: #{recipe.title}"
-    end
+  attr_accessor :title
+  attr_reader :recipes
 
-    def recipe_titles
-        @recipes.each {|recipe| puts recipe.title}
-    end
+  def initialize(title)
+    @title = title
+    @recipes = []
+  end
 
-    def recipe_ingredients
-        @recipes.each {|recipe| puts "These are the ingredients for #{recipe.title}: #{recipe.ingredients}"}
-    end
+  def add_recipe(recipe)
+    @recipes << recipe
+    puts "Added a recipe to the collection: #{recipe.title}"
+  end
 
-    attr_accessor :title
-    attr_reader :recipes
+  def recipe_titles
+    @recipes.each {|recipe| puts recipe.title}
+  end
+
+  def recipe_ingredients
+    @recipes.each {|recipe| puts "These are the ingredients for #{recipe.title}: #{recipe.ingredients}"}
+  end
+
+  def print_cookbook
+    @recipes.each do |recipe|
+      step_num = 1
+      puts "#{recipe.title}: Ingredients - #{recipe.ingredients}"
+      recipe.steps.each {|step| puts "#{step_num}. #{step}"; step_num += 1}
+    end
+  end
+
 end
 
 class Recipe
@@ -31,7 +41,11 @@ class Recipe
     def print_recipe
         puts "Recipe name: #{@title}"
         puts "Ingredients: #{@ingredients.join(", ")}"
-        puts "Steps: #{@steps.join(", ")}"
+        step_num = 1
+        @steps.each do |step|
+          puts "#{step_num}. #{step}"
+          step_num += 1
+        end
     end
 
     attr_accessor :title
